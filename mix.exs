@@ -26,7 +26,7 @@ defmodule Wax.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jason, "~> 1.1"},
+      {:jason, github: "michalmuskala/jason", tag: "v1.2.0"},
       {:httpoison, github: "edgurgel/httpoison", tag: "v1.5.0"},
       {:cbor, github: "yjh0502/cbor-erlang", ref: "b5c9dbc2de15753b2db15e13d88c11738c2ac292"},
       {:x509, github: "voltone/x509", tag: "v0.5.1"},
