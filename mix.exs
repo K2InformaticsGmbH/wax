@@ -29,7 +29,7 @@ defmodule Wax.MixProject do
 
   defp deps do
     [
-	  {:hackney, github: "benoitc/hackney", tag: "1.15.2"},
+	  {:hackney, github: "benoitc/hackney", tag: "1.15.2", override: :true},
       {:jason, github: "michalmuskala/jason", tag: "v1.2.0"},
       {:httpoison, github: "edgurgel/httpoison", tag: "v1.6.0"},
       {:cbor, github: "scalpel-software/cbor", ref: "64e93b4d3985a5a662e78d60a3af97e67dcf286c"},
