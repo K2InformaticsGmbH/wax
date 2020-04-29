@@ -29,12 +29,12 @@ defmodule Wax.MixProject do
 
   defp deps do
     [
-      {:cbor, "~> 1.0.0"},
+      {:jason, github: "michalmuskala/jason", tag: "v1.2.0"},
+      {:httpoison, github: "edgurgel/httpoison", tag: "v1.6.0"},
+      {:cbor, github: "yjh0502/cbor-erlang", ref: "b5c9dbc2de15753b2db15e13d88c11738c2ac292"},
+      {:x509, github: "voltone/x509", tag: "v0.8.0"},
       {:dialyxir, "~> 1.0.0-rc.4", only: [:dev], runtime: false},
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
-      {:httpoison, "~> 1.6"},
-      {:jason, "~> 1.1"},
-      {:x509, "~> 0.8"}
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]
   end
 
